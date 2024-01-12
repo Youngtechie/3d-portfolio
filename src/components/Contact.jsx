@@ -3,7 +3,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 import { styles } from "../constants/style";
 import { EarthCanvas } from "./canvas";
@@ -40,9 +40,9 @@ const Contact = () => {
     //     import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
     //     {
     //       from_name: form.name,
-    //       to_name: "JavaScript Mastery",
+    //       to_name: "Olaegbe Abdul-Rahmon",
     //       from_email: form.email,
-    //       to_email: "sujata@jsmastery.pro",
+    //       to_email: "olaegbeolamilekan1@gmail.com",
     //       message: form.message,
     //     },
     //     import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -62,14 +62,14 @@ const Contact = () => {
     //       setLoading(false);
     //       console.error(error);
 
-    //       alert("Ahh, something went wrong. Please try again.");
+    //       alert("Something went wrong. Please try again.");
     //     }
     //   );
   };
 
   return (
     <div
-      className={`xl:mt-6 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`lg:mt-6 flex lg:flex-row flex-col-reverse justify-between overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -101,7 +101,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="What's your email address?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>

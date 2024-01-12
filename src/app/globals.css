@@ -64,7 +64,6 @@ html{
     #f12711,
     #f5af19
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -80,7 +79,6 @@ html{
     #11998e,
     #38ef7d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -97,7 +95,6 @@ html{
     #2f80ed,
     #56ccf2
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -113,7 +110,6 @@ html{
     #ec008c,
     #fc6767
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../constants/style";
 import { staggerContainer } from "../utils/motion";
 
-const StarWrapper = (Component, idName) =>
+const StarWrapper = (Component, idName, bool = true) =>
   function HOC() {
     return (
       <motion.section
@@ -12,7 +12,7 @@ const StarWrapper = (Component, idName) =>
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
-        className={`${styles.padding} mx-auto relative z-0`}
+        className={`${bool ? `${styles.padding}` : ''} mx-auto relative z-0`}
       >
         <span className='hash-span' id={idName}>
           &nbsp;

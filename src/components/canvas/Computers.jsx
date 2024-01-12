@@ -1,15 +1,29 @@
 "use client";
 
 import React, { Suspense, useEffect, useState, useRef } from "react";
-import { useFrame } from "@react-three/fiber";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF, useProgress, Html } from "@react-three/drei";
-import CanvasLoader from '../Loader'
+import { OrbitControls, Preload } from "@react-three/drei";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { useLoader } from "@react-three/fiber";
+import CanvasLoader from "../Loader";
+import getPath from "@/constants/getpath";
+
+const Computer = (isMobile) => {
+  const url = getPath("desktop");
+  const computer = useLoader(GLTFLoader, url);
+
+  return (
+    <primitive
+      object={computer.scene}
+      scale={isMobile ? 0.7 : 0.75}
+      position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+      rotation={[-0.01, -0.2, -0.1]}
+    />
+  );
+};
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const computer = useGLTF("/desktop_pc/scene.gltf");
-  const groupRef = useRef();
 
   useEffect(() => {
     // Add a listener for changes to the screen size
@@ -19,7 +33,7 @@ const ComputersCanvas = () => {
     setIsMobile(mediaQuery.matches);
 
     // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event: any) => {
+    const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
 
@@ -41,43 +55,28 @@ const ComputersCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
 
-        <group ref={groupRef.current}>
-          <hemisphereLight intensity={1} />
-          <ambientLight intensity={1} />
-          <spotLight
-            position={[-20, 50, 10]}
-            angle={0.12}
-            penumbra={1}
-            intensity={1}
-            castShadow
-            shadow-mapSize={1024}
-          />
-          <pointLight intensity={1} />
-          <primitive
-            object={computer.scene}
-            scale={isMobile ? 0.7 : 0.75}
-            position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-            rotation={[-0.01, -0.2, -0.1]}
-          />
-          <primitive
-            object={computer.scene}
-            scale={isMobile ? 0.7 : 0.75}
-            position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-            rotation={[-0.04, -0.6, -0.1]}
-          />
-        </group>
+        <hemisphereLight intensity={1} />
+        <ambientLight intensity={1} />
+        <spotLight
+          position={[-20, 50, 10]}
+          angle={0.12}
+          penumbra={1}
+          intensity={1}
+          castShadow
+          shadow-mapSize={1024}
+        />
+        <pointLight intensity={1} />
 
+        <Computer isMobile={isMobile} />
+
+        <Preload all />
       </Suspense>
-
-      <Preload all/>
-      
     </Canvas>
   );
 };

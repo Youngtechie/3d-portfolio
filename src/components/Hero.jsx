@@ -1,9 +1,8 @@
 'use client'
 
 import { motion } from "framer-motion";
-
 import { styles } from "../constants/style";
-
+import StarWrapper from "../hoc/SectionWrapper";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
@@ -28,7 +27,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+        <ComputersCanvas />
 
       <div className='absolute xs:bottom-5 bottom-16 w-full flex justify-center items-center'>
         <a href='#about'>
@@ -51,4 +50,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default StarWrapper(Hero, '', false);
