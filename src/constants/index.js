@@ -113,11 +113,11 @@ import {
       ],
     },
     {
-      title: "Freelancer | Web Developer",
-      company_name: "Upwork",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "December 2023 - Present",
+      title: "Mentor",
+      company_name: "ALTSchool of Africa",
+      icon: tesla,
+      iconBg: "#E6DEDD",
+      date: "July 2023 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -126,11 +126,11 @@ import {
       ],
     },
     {
-      title: "Mentor",
-      company_name: "ALTSchool of Africa",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "July 2023 - Present",
+      title: "Freelancer | Web Developer",
+      company_name: "Upwork",
+      icon: starbucks,
+      iconBg: "#383E56",
+      date: "December 2023 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -171,7 +171,7 @@ import {
       name: "Olaegbe Kazeem",
       designation: "CTO",
       company: "OLAK Integrated Services Limited",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      image: "https://randomuser.me/api/portraits/men/6.jpg",
     },
   ];
   

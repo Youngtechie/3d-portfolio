@@ -60,7 +60,7 @@ const About = () => {
         real-world problems. Let&apos;s work together to bring your ideas to
         life
       </motion.p>
-      <div className="mt-10 flex flex-wrap justify-center items-center w-screen gap-10">
+      <div className="mt-10 flex flex-wrap items-center w-screen gap-10">
         {services.map((service, index) => (
           <ServiceCard key={index} {...service} index={index} />
         ))}
