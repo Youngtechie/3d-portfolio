@@ -6,9 +6,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-
 import "react-vertical-timeline-component/style.min.css";
-
 import Image from "next/image";
 import { styles } from "../constants/style";
 import { experiences } from "../constants/index";
@@ -86,4 +84,4 @@ const Experience = () => {
   );
 };
 
-export default StarWrapper(Experience, "work");
+export default StarWrapper(Experience, "");
