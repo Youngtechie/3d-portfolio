@@ -59,7 +59,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <Link href={`#${nav.id}`}>{nav.title}</Link>
+              <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
@@ -89,7 +89,7 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <Link href={`#${nav.id}`}>{nav.title}</Link>
+                  <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
             </ul>
