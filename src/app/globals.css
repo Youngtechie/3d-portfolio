@@ -201,6 +201,6 @@ html{
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
-img[alt='Three JS']{
+.whitelogo, img[alt='Three JS']{
   filter: invert(1);
 } 

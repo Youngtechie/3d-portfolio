@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
-import {Tilt} from "react-tilt";
+import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { github } from "../assets";
+import {link} from '../assets'
 import { styles } from "../constants/style";
 import StarWrapper from "../hoc/SectionWrapper";
 import { projects } from "../constants";
@@ -17,6 +18,7 @@ function ProjectCard({
   tags,
   image,
   source_code_link,
+  external_link
 }) {
   return (
     <>
@@ -38,7 +40,7 @@ function ProjectCard({
               className="w-full h-full object-cover rounded-2xl"
             />
 
-            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+            <div className="absolute inset-0 flex flex-col justify-end items-end m-3 card-img_hover gap-1 left-0">
               <div
                 onClick={() => window.open(source_code_link, "_blank")}
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -49,6 +51,19 @@ function ProjectCard({
                   width={`${50}%`}
                   height={`${50}%`}
                   className="w-1/2 h-1/2 object-contain"
+                />
+
+              </div>
+              <div
+                onClick={() => window.open(external_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <Image
+                  src={link}
+                  alt="source code"
+                  width={`${50}%`}
+                  height={`${50}%`}
+                  className="w-1/2 h-1/2 object-contain whitelogo"
                 />
               </div>
             </div>
@@ -61,12 +76,13 @@ function ProjectCard({
 
           <div className="mt-4 flex flex-wrap gap-2">
             {tags.map((tag) => (
-              <p
+              <div
                 key={`${name}-${tag.name}`}
-                className={`text-[14px]`}
+                className={`flex gap-1 justify-center items-center rounded-[10px] border-2 p-[5px]`}
               >
-                {tag.name}
-              </p>
+                <div className={`h-[20px] w-[20px] ${tag.color}`}></div>
+                <p className={`text-[14px]`}>{tag.name}</p>
+              </div>
             ))}
           </div>
         </Tilt>

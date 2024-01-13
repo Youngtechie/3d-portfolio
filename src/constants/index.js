@@ -19,6 +19,7 @@ import {
     tripguide,
     threejs,
     backend,
+    vuejs
   } from "../assets";
   
   export const navLinks = [
@@ -79,6 +80,10 @@ import {
     {
       name: "Redux Toolkit",
       icon: redux,
+    },
+    {
+      name: "vuejs",
+      icon: vuejs,
     },
     {
       name: "Tailwind CSS",
@@ -177,67 +182,66 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "ChatterApp",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Embrace the revival of textual richness in a visual-dominated era,where authors and readers unite to celebrate the enduring power of words.",
       tags: [
         {
-          name: "ReactJS",
+          name: "VueJS",
+          color: "green-pink-gradient",
+        },
+        {
+          name: "CSS",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "Firebase",
+          color: "orange-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Youngtechie/ChatterApp",
+      external_link: "https://chatterapp-by-olaegbe.netlify.app/"
     },
     {
-      name: "Job IT",
+      name: "Rebuses Game",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        " Dive into the enigmatic world of Rebuses, where emojis and texts interwine to spell out captivating puzzles in this web based gaming adventure.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "ReactJS",
+          color: "violet-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
+          name: "TypeScript",
           color: "pink-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "blue-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Youngtechie/Rebus-Puzzles_webpage",
+      external_link: "https://rebuses.netlify.app/"
     },
     {
-      name: "Trip Guide",
+      name: "Tic-Tac-Toe",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Elevate the fun of Tic-tac-toe with my interactive web game. Challenge friends and family in this digital twist on the classic Xs and Os.",
       tags: [
         {
-          name: "nextjs",
+          name: "ReactJS",
+          color: "violet-gradient",
+        },
+        {
+          name: "CSS",
           color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Youngtechie/tic-tac-toe",
+      external_link: "https://oa-tictactoe.netlify.app/"
     },
   ];
   
