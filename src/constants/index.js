@@ -110,10 +110,10 @@ import {
       iconBg: "#383E56",
       date: "March 2021 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Spearheaded the redesign of a critical user interface, resulting in a 20% improvement in user engagement and a more intuitive user experience.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Led the implementation of responsive design principles, enhancing the company's website accessibility and ensuring a seamless user journey across different devices.",
+        "Resolved complex frontend issues efficiently, demonstrating problem-solving skills and contributing to the continuous improvement of the development process.",
       ],
     },
     {
@@ -123,10 +123,10 @@ import {
       iconBg: "#E6DEDD",
       date: "July 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Mentored junior developers, fostering a collaborative learning environment and aiding in their professional growth.",
+        "Conducted workshops and training sessions on frontend development best practices, sharing industry insights with colleagues to enhance team skills.",
+        "Developed personalized learning plans for mentees, tailoring guidance to individual strengths and areas for improvement, resulting in accelerated skill development.",
+        "Actively engaged in career development discussions with mentees, assisting in setting goals, identifying strengths, and offering guidance on overcoming challenges to support their overall professional advancement.",
       ],
     },
     {
@@ -136,10 +136,10 @@ import {
       iconBg: "#383E56",
       date: "December 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Successfully completed a diverse range of website development projects for clients, showcasing versatility in design and functionality.",
+        "Maintained strong communication and collaboration with clients throughout project lifecycles, ensuring alignment with their vision and delivering websites that exceeded expectations.",
+        "Developed a solid portfolio demonstrating proficiency in various web technologies, frameworks, and design aesthetics to attract new clients and showcase expertise.",
+        "Demonstrated adaptability by staying updated on the latest trends and technologies in web development, offering clients modern and innovative solutions for their online presence.",
       ],
     },
   ];
