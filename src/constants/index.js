@@ -13,13 +13,12 @@ import {
     meta,
     starbucks,
     tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     backend,
-    vuejs
+    vuejs,
+    tic,
+    chatter,
+    rebuses
   } from "../assets";
   
   export const navLinks = [
@@ -199,7 +198,7 @@ import {
           color: "orange-text-gradient",
         },
       ],
-      image: carrent,
+      image: chatter,
       source_code_link: "https://github.com/Youngtechie/ChatterApp",
       external_link: "https://chatterapp-by-olaegbe.netlify.app/"
     },
@@ -221,7 +220,7 @@ import {
           color: "blue-text-gradient",
         },
       ],
-      image: jobit,
+      image: rebuses,
       source_code_link: "https://github.com/Youngtechie/Rebus-Puzzles_webpage",
       external_link: "https://rebuses.netlify.app/"
     },
@@ -239,7 +238,7 @@ import {
           color: "blue-text-gradient",
         },
       ],
-      image: tripguide,
+      image: tic,
       source_code_link: "https://github.com/Youngtechie/tic-tac-toe",
       external_link: "https://oa-tictactoe.netlify.app/"
     },
