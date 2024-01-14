@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works } from "../components";
 import { Metadata } from 'next'
 
@@ -11,7 +12,9 @@ export const metadata: Metadata = {
     url: 'https://oa-3dportfolio.netlify.app/',
     title: "Olaegbe's Portfolio",
     description: 'Passionate frontend developer dedicated to transforming concepts into visually appealing and seamlessly functional websites.',
-    images: '/ogImage.png'
+    images: [
+      { url: '/ogImage.png', width: 'any', height: 'any' }
+    ]
   },
   icons: {
     icon: [{ url: '/logo.svg', sizes: 'any', type: 'image/svg+xml' }]
