@@ -34,7 +34,8 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
+    try{
+      emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_ENV_LOCAL_SERVICEID,
         process.env.NEXT_PUBLIC_ENV_LOCAL_TEMPLATEID,
@@ -43,22 +44,21 @@ const Contact = () => {
       )
       .then(
         () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
           setForm({
             name: "",
             email: "",
             message: "",
           });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Something went wrong. Please try again.");
+          alert("Thank you. I will get back to you as soon as possible.");
         }
-      );
+      )
+    }
+    catch(error){
+      alert("Something went wrong. Please try again.");
+    }
+    finally{
+      setLoading(false);
+    }
   };
 
   return (
